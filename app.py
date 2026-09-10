@@ -1,109 +1,70 @@
-﻿Import streamlit as st 
-Import os 
-From modules.translator import load_dataset, search_word, log_missing_word 
-From modules.quiz import get_quiz_question 
- 
-# ---------- PAGE SETUP ---------- 
-St.set_page_config(page_title=”Lhokay”, page_icon=” 
- 
- 
- 
- 
-  ”, layout=”centered”) 
- 
-# ---------- LOAD DATASET ---------- @st.cache_data 
-Def get_data(): 
-    Return load_dataset(“bhutia_data.csv”) 
- 
-Try: 
-    Df = get_data() 
-Except Exception: 
-    St.error(“   Could not load dataset. Make sure ‘bhutia_data.csv’ exists.”) 
-    St.stop() 
- 
-# ---------- HEADER ---------- St.title(“ Lhokay
- 
- 
- 
- 
-  ”) St.markdown(LhoKay Digital Bridge for Sikkim’s Bhutia Language”) 
-St.caption(“INSPIRE MANAK Project | Class XII | [chewang], [kewzing]”) 
- 
-# ---------- TABS ---------- 
-Tab_translate, tab_quiz, tab_about = st.tabs( 
-    [“ 
- 
- 
- 
- 
- 
-   Translate”, “ 
- 
- 
-   Quiz Mode”, “ 
-   About”] 
-) 
- 
-# ---------- TAB 1 : TRANSLATE ---------- 
-With tab_translate: 
-    Query = st.text_input(“Type an English or Nepali word/phrase:”) 
- 
-    If query.strip():         Results = search_word(query, df) 
- 
-        If results: 
-            For row in results: 
-                St.success(f”**Match:** {row[‘english’]} / {row[‘nepali’]}”) 
-                St.markdown(f”## Bhutia: {row[‘bhutia_script’]}”) 
-                St.markdown(f”**Pronunciation:** {row[‘transliteration’]}”) 
- 
-                # Play audio if it exists 
-                Audio_path = str(row.get(‘audio’, ‘’)) 
-                If audio_path and os.path.exists(audio_path): 
-                    St.audio(audio_path) 
-        Else: 
-            Log_missing_word(query.strip()) 
-            St.warning(“ 
- 
- 
- 
- 
- 
- 
-   Not found. Added to our wish-list for future data collection!”) 
- 
-# ---------- TAB 2 : QUIZ MODE ---------- 
-With tab_quiz: 
-    St.markdown(“Test your Bhutia knowledge!”) 
- 
-    If st.button(“Get a question”):         Sample, correct, options = get_quiz_question(df) 
-        St.session_state[‘quiz’] = { 
-            ‘sample’: sample, 
-            ‘correct’: correct, 
-            ‘options’: options 
-        } 
- 
-    If ‘quiz’ in st.session_state:         Q = st.session_state[‘quiz’] 
-        St.write(f”What is the English meaning of **{q[‘sample’][‘bhutia_script’]}**?”) 
-        St.caption(f”(Pronunciation hint: {q[‘sample’][‘transliteration’]})”) 
- 
-        Choice = st.radio(“Choose the correct answer:”, q[‘options’]) 
-        If st.button(“Check answer”): 
-            If choice == q[‘correct’]: 
-                St.success(“ 
-   Correct! Well done.”) 
-            Else: 
-                St.error(f”   Wrong. The correct answer was: {q[‘correct’]}”) 
- 
-# ---------- TAB 3 : ABOUT ---------- 
-With tab_about: 
-    St.markdown(f””” 
- **Bhutia Setu** is a foundational digital project to preserve Sikkim’s 
-    Endangered Bhutia language. 
- 
-    * **Dataset entries:** {len(df)} words     * **Built by:** [Your Name], Class XII 
-    * **School:** [Your School], Sikkim 
-    * **Under:** INSPIRE MANAK Scheme 
- 
-    This project creates a verified dataset + a beginner-level translation 
-    Tool, designed to grow into advanced AI for Bhutia in the future. 
-    “””) 
+import streamlit as st
+import os
+from modules.translator import load_dataset, search_word, log_missing_word
+from modules.quiz import get_quiz_question
+
+# ---------- PAGE SETUP ----------
+st.set_page_config(page_title="Lho-Kay", layout="centered")
+
+# ---------- LOAD DATASET ----------
+@st.cache_data
+def get_data():
+    return load_dataset("bhutia_data.csv")
+
+try:
+    df = get_data()
+except Exception as e:
+    st.error("Could not load dataset. Error: " + str(e))
+    st.stop()
+
+# ---------- HEADER ----------
+st.title("Lho-Kay")
+st.markdown("A Digital Bridge for Sikkim's Bhutia Language")
+st.caption("INSPIRE MANAK Project | Ms. Angela Bhutia Class XII | Jointly developed Mr. Chewang Chopel Bhutia (PGT Physics) and Mr. Karma Tashi Bhutia (PGT Bhutia) | Kewzing SSS")
+
+# ---------- TABS ----------
+tab_translate, tab_quiz, tab_about = st.tabs(["Translate", "Quiz Mode", "About"])
+
+# ---------- TAB 1 : TRANSLATE ----------
+with tab_translate:
+    query = st.text_input("Type an English or Nepali word/phrase:")
+    if query.strip():
+        results = search_word(query, df)
+        if results:
+            for row in results:
+                st.success("Match: " + str(row['english']) + " / " + str(row['nepali']))
+                st.markdown("## Bhutia: " + str(row['bhutia_script']))
+                st.markdown("Pronunciation: " + str(row['transliteration']))
+                audio_path = str(row.get('audio', ''))
+                if audio_path and os.path.exists(audio_path):
+                    st.audio(audio_path)
+        else:
+            log_missing_word(query.strip())
+            st.warning("Not found. Added to our wish-list!")
+
+# ---------- TAB 2 : QUIZ MODE ----------
+with tab_quiz:
+    st.markdown("Test your Bhutia knowledge!")
+    if st.button("Get a question"):
+        sample, correct, options = get_quiz_question(df)
+        st.session_state['quiz'] = {
+            'sample': sample,
+            'correct': correct,
+            'options': options
+        }
+    if 'quiz' in st.session_state:
+        q = st.session_state['quiz']
+        st.write("What is the English meaning of " + str(q['sample']['bhutia_script']) + "?")
+        st.caption("(Pronunciation hint: " + str(q['sample']['transliteration']) + ")")
+        choice = st.radio("Choose the correct answer:", q['options'])
+        if st.button("Check answer"):
+            if choice == q['correct']:
+                st.success("Correct! Well done.")
+            else:
+                st.error("Wrong. The correct answer was: " + str(q['correct']))
+
+# ---------- TAB 3 : ABOUT ----------
+with tab_about:
+    st.markdown("**Lho-Kay** is a foundational digital project to preserve Sikkim's endangered Bhutia language.")
+    st.write("It provides English/Nepali to Bhutia translation with pronunciation and audio.")
+    st.success("Total dataset entries: " + str(len(df)))
