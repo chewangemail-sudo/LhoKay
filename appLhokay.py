@@ -11,8 +11,8 @@ def get_data():
 
 try:
     df = get_data()
-except Exception:
-    st.error("Could not load dataset. Make sure bhutia_data.csv exists.")
+except Exception as e:
+    st.error("Could not load dataset. Error: " + str(e))
     st.stop()
 
 st.title("Lho-Kay")
