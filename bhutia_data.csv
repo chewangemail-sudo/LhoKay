@@ -12,7 +12,7 @@ yes,हुन्छ,ལགས་ཨིན།  ,la-in.,audio/hello.mp3
 no,होइन,མན་སྦད།  ,men-bey.,audio/hello.mp3
 maybe,हुन सक्छ,མན་ཅེ་ན།  ,men-chey na.,audio/hello.mp3
 okay,हुन्छ,འགྲིག་ཀེ།  ,dik-key.,audio/hello.mp3
-how are you?,तपाईंलाई कस्तो छ?, ལྷན་རྒྱས་ ག་ལྟེམ་ ཡོད?  ,lhengay kha-tem ye?,audio/hello.mp3
+how are you?,तपाईंलाई कस्तो छ?, ལྷན་རྒྱས་ ག་ལྟེམ་ ཡོད?  ,lhengay kha-tem ye?,audio/howareyou.mp3
 I am fine,म ठीक छु,ང་ ལེགམ་ར་ ཡོད། ,nga lem-ra ye.,audio/hello.mp3
 nice to meet you,तपाईंलाई भेटेर खुसी लाग्यो,ལྷན་རྒྱས་ མཉམ་པུ་ མཇལ་སྡི་ དགའ་དྲགས་ འབྱུང་།  ,lhengay nyampu jye-di ga-ta jung.,audio/hello.mp3
 see you later,पछि भेटौँला,རྒྱབ་ལོ་ མཇལ་གེ།   ,gyab-lo jye-gey.,audio/hello.mp3
@@ -47,7 +47,7 @@ how much,कति,ག་ཚོད?  ,gha-tsey?,audio/hello.mp3
 how many,कतिवटा,ག་ཚོད? ,gha-tsey?,audio/hello.mp3
 how long,कति लामो समयसम्म,ནམ་ཟང་སྟེ? ,nam sang-tey?,audio/hello.mp3
 how far,कति टाढा,ག་ལྟེ་ཅིག་ ཐག་རིང? ,gha-tey chik thak-ring?,audio/hello.mp3
-mother,आमा,ཨ་མ/ཨམ/ཡུམ ,ama/am/yum,audio/hello.mp3
+mother,आमा,ཨ་མ/ཨམ/ཡུམ ,ama/am/yum,audio/mother.mp3
 father,बुबा,ཨ་བ/ཡར་པོ/ཡབ། ,aba/yapo/yab,audio/hello.mp3
 younger brother,कान्छा भाइ,སྤུན་ལོ། ,punlo,audio/hello.mp3
 elder sister,दिदी,ཨ་ཞི།  ,a-zhi,audio/hello.mp3
