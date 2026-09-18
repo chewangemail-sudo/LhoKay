@@ -43,17 +43,17 @@ why?,किन?,གན་བྱ༹ས? ,ghan-bya?,audio/Why.m4a
 how?कसरी?,ག་ལྟེ?  ,gha-tey?,audio/How.m4a
 which,कुन,ག་འདི?  ,gha-di?,audio/Which.m4a
 whose,कस्को,ཀའི?  ,ka-yi?,audio/Whose.m4a
-how much,कति,ག་ཚོད?  ,gha-tsey?,audio/hello.mp3
-how many,कतिवटा,ག་ཚོད? ,gha-tsey?,audio/hello.mp3
-how long,कति लामो समयसम्म,ནམ་ཟང་སྟེ? ,nam sang-tey?,audio/hello.mp3
-how far,कति टाढा,ག་ལྟེ་ཅིག་ ཐག་རིང? ,gha-tey chik thak-ring?,audio/hello.mp3
+how much,कति,ག་ཚོད?  ,gha-tsey?,audio/How much.m4a
+how many,कतिवटा,ག་ཚོད? ,gha-tsey?,audio/How many.m4a
+how long,कति लामो समयसम्म,ནམ་ཟང་སྟེ? ,nam sang-tey?,audio/How long.m4a
+how far,कति टाढा,ག་ལྟེ་ཅིག་ ཐག་རིང? ,gha-tey chik thak-ring?,audio/How far.m4a
 mother,आमा,ཨ་མ/ཨམ/ཡུམ ,ama/am/yum,audio/mother.mp3
-father,बुबा,ཨ་བ/ཡར་པོ/ཡབ། ,aba/yapo/yab,audio/hello.mp3
-younger brother,कान्छा भाइ,སྤུན་ལོ། ,punlo,audio/hello.mp3
-elder sister,दिदी,ཨ་ཞི།  ,a-zhi,audio/hello.mp3
-younger sister,कान्छी बहिनी,བུ་སྲིང/ནུམ། ,bhu-sim/num.,audio/hello.mp3
-son,छोरा,བུ/སྲས། ,bhu/sey.,audio/hello.mp3
-daughter,छोरी,བུམ/སྲསམ། ,bhum/sem.,audio/hello.mp3
+father,बुबा,ཨ་བ/ཡར་པོ/ཡབ། ,aba/yapo/yab,audio/Father.m4a
+younger brother,कान्छा भाइ,སྤུན་ལོ། ,punlo,audio/Younger brother.m4a
+elder sister,दिदी,ཨ་ཞི།  ,a-zhi,audio/Elder sister.m4a
+younger sister,कान्छी बहिनी,བུ་སྲིང/ནུམ། ,bhu-sim/num.,audio/Younger sister.m4a
+son,छोरा,བུ/སྲས། ,bhu/sey.,audio/Son.m4a
+daughter,छोरी,བུམ/སྲསམ། ,bhum/sem.,audio/Daughter.m4a
 grandfather,हजुरबुबा,ཨ་ཇོ། ,ajyo.,audio/hello.mp3
 grandmother,हजुरआमा,ཨ་ཉོ། ,anyo.,audio/hello.mp3
 uncle,काका,ཨ་ཀུ།   ,aku.,audio/hello.mp3
