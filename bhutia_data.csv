@@ -1,17 +1,17 @@
 ﻿english,nepali,bhutia_script,transliteration,audio
 hello,नमस्ते ,སྐུ་གཟུགས་ བཟང་པོ། ,Kuzuzangpo.,audio/kuzuzangpo.mp3
-goodbye,बिदा,ག་ལུདབ་ བྱོན་བོ་ གནང་།་ ,gha-lip jyen-bo nang.,audio/hello.mp3
-good morning,शुभ प्रभात, དྲོ་པ་ བདེ་ལེགས།  ,dro-pa delek.,audio/hello.mp3
-good night,शुभ रात्रि,ཕྱི༹་རུ་ བདེ་ལེགས།  ,phyi-ru delek.,audio/hello.mp3
-thank you,धन्यवाद,ཐུགས་རྗེ་ཆེ། ,thukje-chi.,audio/hello.mp3
+good bye,बिदा,ག་ལུདབ་ བྱོན་བོ་ གནང་།་ ,gha-lip jyen-bo nang.,audio/Good bye.m4a
+good morning,शुभ प्रभात, དྲོ་པ་ བདེ་ལེགས།  ,dro-pa delek.,audio/Good morning.m4a
+good night,शुभ रात्रि,ཕྱི༹་རུ་ བདེ་ལེགས།  ,phyi-ru delek.,audio/Good night.m4a
+thank you,धन्यवाद,ཐུགས་རྗེ་ཆེ། ,thukje-chi.,audio/Thank you.m4a
 please, 
-sorry,माफ गर्नुहोस्, དགོངས་འཁྲེལ་ མ་གནང་།  ,gong-threl ma-nang.,audio/hello.mp3
+sorry,माफ गर्नुहोस्, དགོངས་འཁྲེལ་ མ་གནང་།  ,gong-threl ma-nang.,audio/Sorry.m4a
 excuse me, 
-welcome,स्वागत छ,བྱོན་བོ་ལེགས་སོ།  ,jyen-bo leg-so.,audio/hello.mp3
-yes,हुन्छ,ལགས་ཨིན།  ,la-in.,audio/hello.mp3
-no,होइन,མན་སྦད།  ,men-bey.,audio/hello.mp3
-maybe,हुन सक्छ,མན་ཅེ་ན།  ,men-chey na.,audio/hello.mp3
-okay,हुन्छ,འགྲིག་ཀེ།  ,dik-key.,audio/hello.mp3
+welcome,स्वागत छ,བྱོན་བོ་ལེགས་སོ།  ,jyen-bo leg-so.,audio/Welcome.m4a
+yes,हुन्छ,ལགས་ཨིན།  ,la-in.,audio/Yes.m4a
+no,होइन,མན་སྦད།  ,men-bey.,audio/No.m4a
+maybe,हुन सक्छ,མན་ཅེ་ན།  ,men-chey na.,audio/May be.m4a
+okay,हुन्छ,འགྲིག་ཀེ།  ,dik-key.,audio/Okay.m4a
 how are you?,तपाईंलाई कस्तो छ?, ལྷན་རྒྱས་ ག་ལྟེམ་ ཡོད?  ,lhengay kha-tem ye?,audio/howareyou.mp3
 I am fine,म ठीक छु,ང་ ལེགམ་ར་ ཡོད། ,nga lem-ra ye.,audio/hello.mp3
 nice to meet you,तपाईंलाई भेटेर खुसी लाग्यो,ལྷན་རྒྱས་ མཉམ་པུ་ མཇལ་སྡི་ དགའ་དྲགས་ འབྱུང་།  ,lhengay nyampu jye-di ga-ta jung.,audio/hello.mp3
