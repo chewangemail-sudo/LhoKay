@@ -1,4 +1,6 @@
-﻿
+import random
+
+
 def get_quiz_question(df):
     sample = df.sample(1).iloc[0]
     correct = sample['english']
